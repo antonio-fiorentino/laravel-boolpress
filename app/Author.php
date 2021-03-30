@@ -10,7 +10,7 @@ class Author extends Model
         return $this->hasOne('App\AuthorDetail');
     }
 
-    public function post() {
+    public function posts() {
         return $this->hasMany('App\Post');
     }
 }
