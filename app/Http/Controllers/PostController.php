@@ -39,6 +39,12 @@ class PostController extends Controller
     public function store(Request $request)
     {
         $data = $request->all();
+
+        $author_id = $data['author_id'];
+        if(Author::find($author_id)) {
+            dd('check');
+        }
+
         $post = new Post();
         $post->fill($data);
         $post->save();
