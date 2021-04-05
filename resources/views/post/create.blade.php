@@ -28,6 +28,11 @@
     </div>
 
     <div class="form-group">
+      <label for="picture">Immagine</label>
+      <input type="file" name="picture" class="form-control" id="">
+    </div>
+
+    <div class="form-group">
       <label for="tags[]">Tags</label>
       <select class="custom-select" id="tags" name="tags[]" multiple>
         @foreach ($tags as $tag)
